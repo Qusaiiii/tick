@@ -42,7 +42,7 @@ client.on("message", (message) => {
     if (isCommand(message, "اغلاق")) {
         if (!message.channel.name.startsWith(`ticket-`)) return message.channel.send(`لا يمكنك اغلاق التكت وانت خارجها`);
         // Confirm delete - with timeout (Not command)
-        message.channel.send(`هل انت متأكد؟ لتأكيد اكتب **نعم** لديك 10 ثواني لتأكيد
+        message.channel.send(`هل انت متأكد؟ لتأكيد اكتب **نعم** لديك 10 ثواني لتأكيد`)
             .then((m) => {
                 message.channel.awaitMessages(response => response.content === 'نعم', {
                         max: 1,
