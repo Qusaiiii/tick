@@ -55,10 +55,6 @@ client.on("message", (message) => {
                             m2.delete();
                         }, 3000);
                     });
-            });
-    }
-
-});
 
 client.on('message', message => {
   if (!message.content.startsWith(prefix)) return;
